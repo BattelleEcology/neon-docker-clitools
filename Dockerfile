@@ -9,7 +9,7 @@ RUN apk add --update --upgrade --no-cache \
     inetutils-ftp \
     inetutils-telnet && \
   addgroup -g 1001 cliuser &&\
-  adduser cliuser -h /home/cliuser -G cliuser -S -s /bin/zsh &&\
+  adduser cliuser -u 1001 -h /home/cliuser -G cliuser -S -s /bin/zsh &&\
   rm -rf /var/cache/apk/*
 WORKDIR /home/cliuser 
 USER cliuser:cliuser
