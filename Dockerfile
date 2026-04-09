@@ -5,6 +5,7 @@ RUN apk add --update --upgrade --no-cache \
     tmux \
     zsh \
     bash \
+    socat \
     netcat-openbsd \
     inetutils-ftp \
     inetutils-telnet && \
